@@ -147,8 +147,8 @@ class GoogleBase:
     AUTH_URL = 'https://accounts.google.com/o/oauth2/auth'
     TOKEN_URL = 'https://accounts.google.com/o/oauth2/token'
 
-    CLIENT_ID = '349038943026-m16svdadjrqc0c449u4qv71v1m1niu5o.apps.googleusercontent.com'
-    CLIENT_NOT_SO_SECRET = 'jjqbWmICpA0GvbhsJB3okX7s'
+    CLIENT_ID = '324710233156-dl8u853mu0mahpvqn0mf9pars236sepc.apps.googleusercontent.com'
+    CLIENT_NOT_SO_SECRET = 'sSOozqZroHNgTyXm_fy1JY6d'
 
     def _init(self):
         self._location = None
