@@ -20,6 +20,7 @@ COPY . /tmp/motioneye
 
 RUN echo "deb http://snapshot.debian.org/archive/debian/$(date +%Y%m%d) sid main contrib non-free" >>/etc/apt/sources.list && \
     apt-get update && \
+    apt-get install -y libc6 -o APT::Immediate-Configure=0 && \
     DEBIAN_FRONTEND="noninteractive" apt-get -t stable --yes --option Dpkg::Options::="--force-confnew" --no-install-recommends install \
       curl \
       ffmpeg \
